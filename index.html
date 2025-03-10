@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construções Geométricas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #f9f9f9;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .content {
+            display: none;
+            margin-top: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Construções Geométricas com Régua e Compasso</h1>
+
+        <label for="construcao">Escolha uma construção:</label>
+        <select id="construcao" onchange="mostrarConstrucao()">
+            <option value="">Selecione...</option>
+            <option value="bissetriz">Construção da Bissetriz de um Ângulo</option>
+            <option value="mediatriz">Construção da Mediatriz de um Segmento</option>
+            <option value="angulo_90">Construção do Ângulo de 90º</option>
+            <option value="angulo_60">Construção do Ângulo de 60º</option>
+            <option value="angulo_45">Construção do Ângulo de 45º</option>
+            <option value="angulo_30">Construção do Ângulo de 30º</option>
+            <option value="triangulo">Construção do Triângulo Equilátero</option>
+            <option value="hexagono">Construção do Hexágono Regular</option>
+            <option value="pentagono">Construção do Pentágono Regular</option>
+        </select>
+
+        <div id="bissetriz" class="content">
+            <h2>Construção da Bissetriz de um Ângulo</h2>
+            <p>1. Abra o compasso em qualquer abertura e trace um arco que intercepte os dois lados do ângulo.</p>
+            <p>2. Sem alterar a abertura, faça um arco a partir de cada ponto de interseção.</p>
+            <p>3. O ponto onde esses arcos se cruzam é a direção da bissetriz.</p>
+            <img src="imagens/bissetriz.gif" alt="Bissetriz de um Ângulo">
+        </div>
+
+        <div id="mediatriz" class="content">
+            <h2>Construção da Mediatriz de um Segmento</h2>
+            <p>1. Abra o compasso com uma abertura maior que a metade do segmento.</p>
+            <p>2. Trace arcos a partir de cada extremidade do segmento.</p>
+            <p>3. A reta que passa pelos pontos de interseção é a mediatriz.</p>
+            <img src="imagens/mediatriz.gif" alt="Mediatriz de um Segmento">
+        </div>
+
+        <div id="angulo_90" class="content">
+            <h2>Construção do Ângulo de 90º</h2>
+            <p>1. Trace um segmento e um arco com centro em uma das extremidades.</p>
+            <p>2. Divida o arco ao meio para encontrar a perpendicular.</p>
+            <img src="imagens/angulo_90.gif" alt="Ângulo de 90º">
+        </div>
+
+        <div id="angulo_60" class="content">
+            <h2>Construção do Ângulo de 60º</h2>
+            <p>1. Trace um segmento e um arco com centro em uma das extremidades.</p>
+            <p>2. Sem alterar a abertura, trace um novo arco a partir do ponto encontrado.</p>
+            <img src="imagens/angulo_60.gif" alt="Ângulo de 60º">
+        </div>
+
+        <div id="angulo_45" class="content">
+            <h2>Construção do Ângulo de 45º</h2>
+            <p>1. Construa um ângulo de 90º e divida-o ao meio com a bissetriz.</p>
+            <img src="imagens/angulo_45.gif" alt="Ângulo de 45º">
+        </div>
+
+        <div id="angulo_30" class="content">
+            <h2>Construção do Ângulo de 30º</h2>
+            <p>1. Construa um ângulo de 60º e divida-o ao meio com a bissetriz.</p>
+            <img src="imagens/angulo_30.gif" alt="Ângulo de 30º">
+        </div>
+
+        <div id="triangulo" class="content">
+            <h2>Construção do Triângulo Equilátero</h2>
+            <p>1. Trace um segmento e use sua medida para marcar dois arcos em cada extremidade.</p>
+            <p>2. O ponto de interseção dos arcos é o terceiro vértice do triângulo equilátero.</p>
+            <img src="imagens/triangulo.gif" alt="Triângulo Equilátero">
+        </div>
+
+        <div id="hexagono" class="content">
+            <h2>Construção do Hexágono Regular</h2>
+            <p>1. Trace uma circunferência e use o raio para marcar seis pontos ao redor dela.</p>
+            <img src="imagens/hexagono.gif" alt="Hexágono Regular">
+        </div>
+
+        <div id="pentagono" class="content">
+            <h2>Construção do Pentágono Regular</h2>
+            <p>1. Utilize a proporção áurea para determinar as posições dos vértices dentro de uma circunferência.</p>
+            <img src="imagens/pentagono.gif" alt="Pentágono Regular">
+        </div>
+    </div>
+
+    <script>
+        function mostrarConstrucao() {
+            const opcoes = document.querySelectorAll('.content');
+            opcoes.forEach(opcao => opcao.style.display = 'none');
+
+            const selecionado = document.getElementById('construcao').value;
+            if (selecionado) {
+                document.getElementById(selecionado).style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
