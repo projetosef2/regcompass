@@ -1,163 +1,164 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Construções Geométricas</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background: #f9f9f9;
-            padding: 20px;
+<!DOCTYPE HTML>
+<HTML LANG="PT-BR">
+<HEAD>
+    <META CHARSET="UTF-8">
+    <META NAME="VIEWPORT" CONTENT="WIDTH=DEVICE-WIDTH, INITIAL-SCALE=1.0">
+    <TITLE>CONSTRUÇÕES GEOMÉTRICAS</TITLE>
+    <STYLE>
+        BODY {
+            FONT-FAMILY: ARIAL, SANS-SERIF;
+            TEXT-ALIGN: CENTER;
+            BACKGROUND: #F9F9F9;
+            PADDING: 20PX;
         }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
+        .CONTAINER {
+            MAX-WIDTH: 800PX;
+            MARGIN: 0 AUTO;
         }
-        .content {
-            display: none;
-            margin-top: 20px;
+        .CONTENT {
+            DISPLAY: NONE;
+            MARGIN-TOP: 20PX;
         }
-        img {
-            max-width: 100%;
-            height: auto;
-            border: 1px solid #ccc;
-            border-radius: 8px;
+        IMG {
+            MAX-WIDTH: 100%;
+            HEIGHT: AUTO;
+            BORDER: 1PX SOLID #CCC;
+            BORDER-RADIUS: 8PX;
         }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Construções Geométricas com Régua e Compasso</h1>
+    </STYLE>
+</HEAD>
+<BODY>
+    <DIV CLASS="CONTAINER">
+        <H1>CONSTRUÇÕES GEOMÉTRICAS COM RÉGUA E COMPASSO</H1>
 
-        <label for="construcao">Escolha uma construção:</label>
-        <select id="construcao" onchange="mostrarConstrucao()">
-            <option value="">Selecione...</option>
-            <option value="bissetriz">Construção da Bissetriz de um Ângulo</option>
-            <option value="mediatriz">Construção da Mediatriz de um Segmento</option>
-            <option value="angulo_90">Construção do Ângulo de 90º</option>
-            <option value="angulo_60">Construção do Ângulo de 60º</option>
-            <option value="angulo_45">Construção do Ângulo de 45º</option>
-            <option value="angulo_30">Construção do Ângulo de 30º</option>
-            <option value="triangulo">Construção do Triângulo Equilátero</option>
-            <option value="hexagono">Construção do Hexágono Regular</option>
-             <option value="quadrado">Construção do Quadrado</option>
+        <LABEL FOR="CONSTRUCAO">ESCOLHA UMA CONSTRUÇÃO:</LABEL>
+        <SELECT ID="CONSTRUCAO" ONCHANGE="MOSTRARCONSTRUCAO()">
+            <OPTION VALUE="">SELECIONE...</OPTION>
+            <OPTION VALUE="BISSETRIZ">CONSTRUÇÃO DA BISSETRIZ DE UM ÂNGULO</OPTION>
+            <OPTION VALUE="MEDIATRIZ">CONSTRUÇÃO DA MEDIATRIZ DE UM SEGMENTO</OPTION>
+            <OPTION VALUE="ANGULO_90">CONSTRUÇÃO DO ÂNGULO DE 90º</OPTION>
+            <OPTION VALUE="ANGULO_60">CONSTRUÇÃO DO ÂNGULO DE 60º</OPTION>
+            <OPTION VALUE="ANGULO_45">CONSTRUÇÃO DO ÂNGULO DE 45º</OPTION>
+            <OPTION VALUE="ANGULO_30">CONSTRUÇÃO DO ÂNGULO DE 30º</OPTION>
+            <OPTION VALUE="TRIANGULO">CONSTRUÇÃO DO TRIÂNGULO EQUILÁTERO</OPTION>
+            <OPTION VALUE="HEXAGONO">CONSTRUÇÃO DO HEXÁGONO REGULAR</OPTION>
+             <OPTION VALUE="QUADRADO">CONSTRUÇÃO DO QUADRADO</OPTION>
            
-        </select>
+        </SELECT>
 
-        <div id="bissetriz" class="content">
-            <h2>Construção da Bissetriz de um Ângulo</h2>
-            <p>1.Desenhe o ângulo: Trace um ângulo qualquer e nomeie seus pontos: O (vértice do ângulo), 𝑥 e 𝑦 (extremidades dos lados do ângulo).</p>
-            <p>2.Marque dois pontos no ângulo: Com a ponta seca do compasso em 𝑂, trace um arco que intersecta os dois lados do ângulo. Marque os pontos de interseção como T1 (no lado 𝑂𝑥) e T2(no lado 𝑂𝑦).</p>
-            <p>3.Trace arcos a partir de T1 e T2: Posicione a ponta seca do compasso em T1 e trace um arco dentro do ângulo. Sem alterar a abertura do compasso, repita o processo com a ponta em T2, de modo que os dois arcos se cruzem em um ponto T.</p>
-            <p>4.Desenhe a bissetriz:Use a régua para unir o ponto 𝑂 (vértice do ângulo) ao ponto T (interseção dos arcos). A linha 𝑂T será a bissetriz do ângulo.</p>
-            <img src="imagens/bissetriz.gif" alt="Bissetriz de um Ângulo">
-             <p><a href="https://commons.wikimedia.org/w/index.php?search=regua+e+compasso&title=Special:MediaSearch&type=image" target="_blank">Fonte da imagem(Adaptada): https://commons.wikimedia.org/w/index.php?search=regua+e+compasso&title=Special:MediaSearch&type=image" target="_blank". Acesso em: 13/03/2025. </a></p>
-        </div>
+        <DIV ID="BISSETRIZ" CLASS="CONTENT">
+            <H2>CONSTRUÇÃO DA BISSETRIZ DE UM ÂNGULO</H2>
+            <P>1.DESENHE O ÂNGULO: TRACE UM ÂNGULO QUALQUER E NOMEIE SEUS PONTOS: O (VÉRTICE DO ÂNGULO), 𝑥 E 𝑦 (EXTREMIDADES DOS LADOS DO ÂNGULO).</P>
+            <P>2.MARQUE DOIS PONTOS NO ÂNGULO: COM A PONTA SECA DO COMPASSO EM 𝑂, TRACE UM ARCO QUE INTERSECTA OS DOIS LADOS DO ÂNGULO. MARQUE OS PONTOS DE INTERSEÇÃO COMO T1 (NO LADO 𝑂𝑥) E T2(NO LADO 𝑂𝑦).</P>
+            <P>3.TRACE ARCOS A PARTIR DE T1 E T2: POSICIONE A PONTA SECA DO COMPASSO EM T1 E TRACE UM ARCO DENTRO DO ÂNGULO. SEM ALTERAR A ABERTURA DO COMPASSO, REPITA O PROCESSO COM A PONTA EM T2, DE MODO QUE OS DOIS ARCOS SE CRUZEM EM UM PONTO T.</P>
+            <P>4.DESENHE A BISSETRIZ:USE A RÉGUA PARA UNIR O PONTO 𝑂 (VÉRTICE DO ÂNGULO) AO PONTO T (INTERSEÇÃO DOS ARCOS). A LINHA 𝑂T SERÁ A BISSETRIZ DO ÂNGULO.</P>
+            <IMG SRC="IMAGENS/BISSETRIZ.GIF" ALT="BISSETRIZ DE UM ÂNGULO">
+             <P><A HREF="HTTPS://COMMONS.WIKIMEDIA.ORG/W/INDEX.PHP?SEARCH=REGUA+E+COMPASSO&TITLE=SPECIAL:MEDIASEARCH&TYPE=IMAGE" TARGET="_BLANK">FONTE DA IMAGEM(ADAPTADA): HTTPS://COMMONS.WIKIMEDIA.ORG/W/INDEX.PHP?SEARCH=REGUA+E+COMPASSO&TITLE=SPECIAL:MEDIASEARCH&TYPE=IMAGE" TARGET="_BLANK". ACESSO EM: 13/03/2025. </A></P>
+        </DIV>
 
-        </div>
+        </DIV>
 
-        <div id="mediatriz" class="content">
-            <h2>Construção da Mediatriz de um Segmento</h2>
-            <p>1.Desenhe o segmento de reta: Trace um segmento de reta qualquer e nomeie seus extremos como 𝐴 e 𝐵.</p>
-            <p>2.Marque dois arcos acima e abaixo do segmento: 1) Posicione a ponta seca do compasso em 𝐴 e ajuste a abertura para um pouco mais da metade do segmento. <br>
-            2)Trace um arco acima e outro abaixo do segmento. 3)Sem alterar a abertura do compasso, repita o processo a partir do ponto 𝐵, criando dois novos arcos que cruzam os anteriores.</p>
-            <p>3.A reta que passa pelos pontos de interseção é a mediatriz.</p>
-            <img src="imagens/mediatriz.gif" alt="Mediatriz de um Segmento">
-             <p><a href="https://commons.wikimedia.org/w/index.php?search=regua+e+compasso&title=Special:MediaSearch&type=image" target="_blank">Fonte da imagem(Adaptada): https://commons.wikimedia.org/w/index.php?search=regua+e+compasso&title=Special:MediaSearch&type=image" target="_blank". Acesso em: 13/03/2025.</a></p>
-        </div>
+        <DIV ID="MEDIATRIZ" CLASS="CONTENT">
+            <H2>CONSTRUÇÃO DA MEDIATRIZ DE UM SEGMENTO</H2>
+            <P>1.DESENHE O SEGMENTO DE RETA: TRACE UM SEGMENTO DE RETA QUALQUER E NOMEIE SEUS EXTREMOS COMO 𝐴 E 𝐵.</P>
+            <P>2.MARQUE DOIS ARCOS ACIMA E ABAIXO DO SEGMENTO: 1) POSICIONE A PONTA SECA DO COMPASSO EM 𝐴 E AJUSTE A ABERTURA PARA UM POUCO MAIS DA METADE DO SEGMENTO. <BR>
+            2)TRACE UM ARCO ACIMA E OUTRO ABAIXO DO SEGMENTO. 3)SEM ALTERAR A ABERTURA DO COMPASSO, REPITA O PROCESSO A PARTIR DO PONTO 𝐵, CRIANDO DOIS NOVOS ARCOS QUE CRUZAM OS ANTERIORES.</P>
+            <P>3.A RETA QUE PASSA PELOS PONTOS DE INTERSEÇÃO É A MEDIATRIZ.</P>
+            <IMG SRC="IMAGENS/MEDIATRIZ.GIF" ALT="MEDIATRIZ DE UM SEGMENTO">
+             <P><A HREF="HTTPS://COMMONS.WIKIMEDIA.ORG/W/INDEX.PHP?SEARCH=REGUA+E+COMPASSO&TITLE=SPECIAL:MEDIASEARCH&TYPE=IMAGE" TARGET="_BLANK">FONTE DA IMAGEM(ADAPTADA): HTTPS://COMMONS.WIKIMEDIA.ORG/W/INDEX.PHP?SEARCH=REGUA+E+COMPASSO&TITLE=SPECIAL:MEDIASEARCH&TYPE=IMAGE" TARGET="_BLANK". ACESSO EM: 13/03/2025.</A></P>
+        </DIV>
 
-        </div>
+        </DIV>
 
-        <div id="angulo_90" class="content">
-            <h2>Construção do Ângulo de 90º</h2>
-            <p>1. Desenhe o Segmento PA.</p>
-            <p>2. Coloque a ponta seca do compasso em P e desenhe um arco que corte o segmento em Q.</p>
-             <p>3. Coloque a ponta seca do compasso em P e desenhe um arco que corte o segmento em Q.</p>
-             <p>4. Coloque a ponta seca do compasso em Q e desenhe um arco de raio PQ que corte o arco desenhado na Etapa 2 em R.</p>
-             <p>5. Com a ponta do compasso em R , desenhe um arco de raio PQ para cortar o arco desenhado na Etapa 2 em S.</p>
-             <p>6. Com a ponta do compasso ainda em R , desenhe outro arco de raio PQ próximo a T conforme mostrado.</p>
-             <p>7. Com a ponta do compasso em S , desenhe um arco de raio PQ para cortar o arco desenhado na etapa 5 em T.</p>
-             <p>8.  Una T a P . O ângulo APT é 90º.</p>
-            <img src="imagens/angulo_90.gif" alt="Ângulo de 90º">
-            <p><a href="https://www.mathsteacher.com.au/year8/ch10_geomcons/05_angles/const.htm" target="_blank">Extraído e aptado de https://www.mathsteacher.com.au/year8/ch10_geomcons/05_angles/const.htm. Acesso em : 13/03/2025.</a></p>
-        </div>
+        <DIV ID="ANGULO_90" CLASS="CONTENT">
+            <H2>CONSTRUÇÃO DO ÂNGULO DE 90º</H2>
+            <P>1. DESENHE O SEGMENTO PA.</P>
+            <P>2. COLOQUE A PONTA SECA DO COMPASSO EM P E DESENHE UM ARCO QUE CORTE O SEGMENTO EM Q.</P>
+             <P>3. COLOQUE A PONTA SECA DO COMPASSO EM P E DESENHE UM ARCO QUE CORTE O SEGMENTO EM Q.</P>
+             <P>4. COLOQUE A PONTA SECA DO COMPASSO EM Q E DESENHE UM ARCO DE RAIO PQ QUE CORTE O ARCO DESENHADO NA ETAPA 2 EM R.</P>
+             <P>5. COM A PONTA DO COMPASSO EM R , DESENHE UM ARCO DE RAIO PQ PARA CORTAR O ARCO DESENHADO NA ETAPA 2 EM S.</P>
+             <P>6. COM A PONTA DO COMPASSO AINDA EM R , DESENHE OUTRO ARCO DE RAIO PQ PRÓXIMO A T CONFORME MOSTRADO.</P>
+             <P>7. COM A PONTA DO COMPASSO EM S , DESENHE UM ARCO DE RAIO PQ PARA CORTAR O ARCO DESENHADO NA ETAPA 5 EM T.</P>
+             <P>8.  UNA T A P . O ÂNGULO APT É 90º.</P>
+            <IMG SRC="IMAGENS/ANGULO_90.GIF" ALT="ÂNGULO DE 90º">
+            <P><A HREF="HTTPS://WWW.MATHSTEACHER.COM.AU/YEAR8/CH10_GEOMCONS/05_ANGLES/CONST.HTM" TARGET="_BLANK">EXTRAÍDO E APTADO DE HTTPS://WWW.MATHSTEACHER.COM.AU/YEAR8/CH10_GEOMCONS/05_ANGLES/CONST.HTM. ACESSO EM : 13/03/2025.</A></P>
+        </DIV>
 
-        <div id="angulo_60" class="content">
-            <h2>Construção do Ângulo de 60º</h2>
-            <p>1. Desenhe o o segmento PQ .</p>
-            <p>2. Sem alterar a abertura, coloque a ponta do compasso em P e desenhe um arco que passe por Q.</p>
-            <p>3. Sem alterar a abertura, coloque a ponta do compasso em q e desenhe um arco que passe por P. Deixe este arco cortar o arco desenhado no Passo 2 em R.</p>
-            <p>4. Una o ponto P ao Ponto R o angulo QPR é de 60º e o triângulo PQR é um triângulo equilátero.</p>
-            <img src="imagens/angulo_60.gif" alt="Ângulo de 60º">
-            <p><a href="https://www.mathsteacher.com.au/year8/ch10_geomcons/05_angles/const.htm" target="_blank">Extraído e aptado de https://www.mathsteacher.com.au/year8/ch10_geomcons/05_angles/const.htm. Acesso em : 13/03/2025.</a></p>
-        </div>
+        <DIV ID="ANGULO_60" CLASS="CONTENT">
+            <H2>CONSTRUÇÃO DO ÂNGULO DE 60º</H2>
+            <P>1. DESENHE O O SEGMENTO PQ .</P>
+            <P>2. SEM ALTERAR A ABERTURA, COLOQUE A PONTA DO COMPASSO EM P E DESENHE UM ARCO QUE PASSE POR Q.</P>
+            <P>3. SEM ALTERAR A ABERTURA, COLOQUE A PONTA DO COMPASSO EM Q E DESENHE UM ARCO QUE PASSE POR P. DEIXE ESTE ARCO CORTAR O ARCO DESENHADO NO PASSO 2 EM R.</P>
+            <P>4. UNA O PONTO P AO PONTO R O ANGULO QPR É DE 60º E O TRIÂNGULO PQR É UM TRIÂNGULO EQUILÁTERO.</P>
+            <IMG SRC="IMAGENS/ANGULO_60.GIF" ALT="ÂNGULO DE 60º">
+            <P><A HREF="HTTPS://WWW.MATHSTEACHER.COM.AU/YEAR8/CH10_GEOMCONS/05_ANGLES/CONST.HTM" TARGET="_BLANK">EXTRAÍDO E APTADO DE HTTPS://WWW.MATHSTEACHER.COM.AU/YEAR8/CH10_GEOMCONS/05_ANGLES/CONST.HTM. ACESSO EM : 13/03/2025.</A></P>
+        </DIV>
 
-        <div id="angulo_45" class="content">
-            <h2>Construção do Ângulo de 45º</h2>
-            <p>1. Construa um ângulo de 90º e divida-o ao meio com a bissetriz.</p>
-            <img src="imagens/angulo_45.gif" alt="Ângulo de 45º">
-            <p><a href="https://www.mathsteacher.com.au/year8/ch10_geomcons/05_angles/const.htm" target="_blank">Extraído e aptado de https://www.mathsteacher.com.au/year8/ch10_geomcons/05_angles/const.htm. Acesso em : 13/03/2025.</a></p>
-        </div>
+        <DIV ID="ANGULO_45" CLASS="CONTENT">
+            <H2>CONSTRUÇÃO DO ÂNGULO DE 45º</H2>
+            <P>1. CONSTRUA UM ÂNGULO DE 90º E DIVIDA-O AO MEIO COM A BISSETRIZ.</P>
+            <IMG SRC="IMAGENS/ANGULO_45.GIF" ALT="ÂNGULO DE 45º">
+            <P><A HREF="HTTPS://WWW.MATHSTEACHER.COM.AU/YEAR8/CH10_GEOMCONS/05_ANGLES/CONST.HTM" TARGET="_BLANK">EXTRAÍDO E APTADO DE HTTPS://WWW.MATHSTEACHER.COM.AU/YEAR8/CH10_GEOMCONS/05_ANGLES/CONST.HTM. ACESSO EM : 13/03/2025.</A></P>
+        </DIV>
 
-        <div id="angulo_30" class="content">
-            <h2>Construção do Ângulo de 30º</h2>
-            <p>1. Construa um ângulo de 60º e divida-o ao meio com a bissetriz.</p>
-            <img src="imagens/angulo_30.gif" alt="Ângulo de 30º">
-            <p><a href="https://www.mathsteacher.com.au/year8/ch10_geomcons/05_angles/const.htm" target="_blank">Extraído e aptado de https://www.mathsteacher.com.au/year8/ch10_geomcons/05_angles/const.htm. Acesso em : 13/03/2025.</a></p>
-        </div>
+        <DIV ID="ANGULO_30" CLASS="CONTENT">
+            <H2>CONSTRUÇÃO DO ÂNGULO DE 30º</H2>
+            <P>1. CONSTRUA UM ÂNGULO DE 60º E DIVIDA-O AO MEIO COM A BISSETRIZ.</P>
+            <IMG SRC="IMAGENS/ANGULO_30.GIF" ALT="ÂNGULO DE 30º">
+            <P><A HREF="HTTPS://WWW.MATHSTEACHER.COM.AU/YEAR8/CH10_GEOMCONS/05_ANGLES/CONST.HTM" TARGET="_BLANK">EXTRAÍDO E APTADO DE HTTPS://WWW.MATHSTEACHER.COM.AU/YEAR8/CH10_GEOMCONS/05_ANGLES/CONST.HTM. ACESSO EM : 13/03/2025.</A></P>
+        </DIV>
 
-        <div id="triangulo" class="content">
-            <h2>Construção do Triângulo Equilátero</h2>
-            <p>1.Desenhe um segmento de reta: Trace um segmento com a régua.</p>
-            <p>2.Desenhe uma circunferência com centro sobre o segmento: Crie um ponto O sobre o segmento . Ajuste uma abertura qualquer para o compasso.<br> Com a ponta seca sobre o ponto O, trace uma cirgunferência. Crie um  ponto  T e T3 nas intersecções da circunferência com o segmento.</p>
-            <p>3.Crie um arco de cirunferência: Com a ponta seca do compasso em T. crie um arco de circunferência que intercepte a circunferência em dois pontos T1 e T2.</p>
-            <p>4.Crie o Triângulo Equilátero: Com uma régua una os pontos T1 e T2, T1 e T3, T2 e T3. O triângulo formado é um triângulo equilátero.</p>
-            <img src="imagens/triangulo.gif" alt="Triângulo Equilátero">
-             <p><a href="https://commons.wikimedia.org/w/index.php?search=regua+e+compasso&title=Special:MediaSearch&type=image" target="_blank">Fonte da imagem(Adaptada): https://commons.wikimedia.org/w/index.php?search=regua+e+compasso&title=Special:MediaSearch&type=image" target="_blank". Acesso em: 13/03/2025. </a></p>
-        </div>
+        <DIV ID="TRIANGULO" CLASS="CONTENT">
+            <H2>CONSTRUÇÃO DO TRIÂNGULO EQUILÁTERO</H2>
+            <P>1.DESENHE UM SEGMENTO DE RETA: TRACE UM SEGMENTO COM A RÉGUA.</P>
+            <P>2.DESENHE UMA CIRCUNFERÊNCIA COM CENTRO SOBRE O SEGMENTO: CRIE UM PONTO O SOBRE O SEGMENTO . AJUSTE UMA ABERTURA QUALQUER PARA O COMPASSO.<BR> COM A PONTA SECA SOBRE O PONTO O, TRACE UMA CIRGUNFERÊNCIA. CRIE UM  PONTO  T E T3 NAS INTERSECÇÕES DA CIRCUNFERÊNCIA COM O SEGMENTO.</P>
+            <P>3.CRIE UM ARCO DE CIRUNFERÊNCIA: COM A PONTA SECA DO COMPASSO EM T. CRIE UM ARCO DE CIRCUNFERÊNCIA QUE INTERCEPTE A CIRCUNFERÊNCIA EM DOIS PONTOS T1 E T2.</P>
+            <P>4.CRIE O TRIÂNGULO EQUILÁTERO: COM UMA RÉGUA UNA OS PONTOS T1 E T2, T1 E T3, T2 E T3. O TRIÂNGULO FORMADO É UM TRIÂNGULO EQUILÁTERO.</P>
+            <IMG SRC="IMAGENS/TRIANGULO.GIF" ALT="TRIÂNGULO EQUILÁTERO">
+             <P><A HREF="HTTPS://COMMONS.WIKIMEDIA.ORG/W/INDEX.PHP?SEARCH=REGUA+E+COMPASSO&TITLE=SPECIAL:MEDIASEARCH&TYPE=IMAGE" TARGET="_BLANK">FONTE DA IMAGEM(ADAPTADA): HTTPS://COMMONS.WIKIMEDIA.ORG/W/INDEX.PHP?SEARCH=REGUA+E+COMPASSO&TITLE=SPECIAL:MEDIASEARCH&TYPE=IMAGE" TARGET="_BLANK". ACESSO EM: 13/03/2025. </A></P>
+        </DIV>
 
-        </div>
+        </DIV>
 
-        <div id="hexagono" class="content">
-            <h2>Construção do Hexágono Regular</h2>
-            <p>1. Desenhar uma circunferência: Com o compasso, trace uma circunferência de centro em um ponto 𝑂 e raio 𝑟 qualquer .</p>
-            <p>2. Desenhar um segmento: que passe pelo centro da circunferência, ou seja , o ponto O. marque as intersecções do segmento com a circunferência, como os pontos A e B.</p>
-            <p>3.Marcar os vértices do hexágono: Sem alterar a abertura do compasso (mantendo o raio da circunferência), posicione a ponta seca em 𝐴 <br>e faça um arco que cruze a circunferência em dois pontos. Repita o processo em 𝐵 para encontrar oos outros dois pontos de intersecção. nomeie todos os pontos de intersecção .</p>
-            <p>4.Unir os pontos para formar o hexágono: Use a régua para conectar os pontos 𝐴,C,E,B,F,D em sequência. Agora você tem um hexágono regular, com todos os lados e ângulos iguais! .</p>
-            <img src="imagens/hexagono.gif" alt="Hexágono Regular">
-             <p><a href="https://commons.wikimedia.org/w/index.php?search=regua+e+compasso&title=Special:MediaSearch&type=image" target="_blank">Fonte da imagem(Adaptada): https://commons.wikimedia.org/w/index.php?search=regua+e+compasso&title=Special:MediaSearch&type=image" target="_blank". Acesso em: 13/03/2025. </a></p>
-        </div>
+        <DIV ID="HEXAGONO" CLASS="CONTENT">
+            <H2>CONSTRUÇÃO DO HEXÁGONO REGULAR</H2>
+            <P>1. DESENHAR UMA CIRCUNFERÊNCIA: COM O COMPASSO, TRACE UMA CIRCUNFERÊNCIA DE CENTRO EM UM PONTO 𝑂 E RAIO 𝑟 QUALQUER .</P>
+            <P>2. DESENHAR UM SEGMENTO: QUE PASSE PELO CENTRO DA CIRCUNFERÊNCIA, OU SEJA , O PONTO O. MARQUE AS INTERSECÇÕES DO SEGMENTO COM A CIRCUNFERÊNCIA, COMO OS PONTOS A E B.</P>
+            <P>3.MARCAR OS VÉRTICES DO HEXÁGONO: SEM ALTERAR A ABERTURA DO COMPASSO (MANTENDO O RAIO DA CIRCUNFERÊNCIA), POSICIONE A PONTA SECA EM 𝐴 <BR>E FAÇA UM ARCO QUE CRUZE A CIRCUNFERÊNCIA EM DOIS PONTOS. REPITA O PROCESSO EM 𝐵 PARA ENCONTRAR OOS OUTROS DOIS PONTOS DE INTERSECÇÃO. NOMEIE TODOS OS PONTOS DE INTERSECÇÃO .</P>
+            <P>4.UNIR OS PONTOS PARA FORMAR O HEXÁGONO: USE A RÉGUA PARA CONECTAR OS PONTOS 𝐴,C,E,B,F,D EM SEQUÊNCIA. AGORA VOCÊ TEM UM HEXÁGONO REGULAR, COM TODOS OS LADOS E ÂNGULOS IGUAIS! .</P>
+            <IMG SRC="IMAGENS/HEXAGONO.GIF" ALT="HEXÁGONO REGULAR">
+             <P><A HREF="HTTPS://COMMONS.WIKIMEDIA.ORG/W/INDEX.PHP?SEARCH=REGUA+E+COMPASSO&TITLE=SPECIAL:MEDIASEARCH&TYPE=IMAGE" TARGET="_BLANK">FONTE DA IMAGEM(ADAPTADA): HTTPS://COMMONS.WIKIMEDIA.ORG/W/INDEX.PHP?SEARCH=REGUA+E+COMPASSO&TITLE=SPECIAL:MEDIASEARCH&TYPE=IMAGE" TARGET="_BLANK". ACESSO EM: 13/03/2025. </A></P>
+        </DIV>
 
-        </div>
-     <div id="quadrado" class="content">
-            <h2>Construção do Quadrado</h2>
-            <p>1.Desenhar o segmento inicial: Trace um segmento de reta AB com o comprimento desejado para o lado do quadrado.</p>
-            <p>2.Construir uma reta perpendicular no ponto A: 1) Com o compasso, marque uma abertura qualquer e faça um arco com centro em A. 2) <br>Mantendo a mesma abertura, faça dois arcos a partir dos pontos de intersecção do primeiro arco com o segmento. 3) Trace a reta perpendicular passando por A.</p>
-            <p>3.Transportar a medida do lado para a perpendicular: Com a abertura do compasso igual ao comprimento de AB, marque esse comprimento na reta perpendicular a partir de A, criando o ponto C.</p>
-            <p>4.Construir a perpendicular em B: 1)Repita o processo de traçar uma reta perpendicular em B. 2) Com o compasso, transporte a medida do lado do quadrado para essa reta, criando o ponto D.</p>
-            <p>5.Finalizar o quadrado: Ligue os pontos A, B, C e D em sequência..</p>
+        </DIV>
+     <DIV ID="QUADRADO" CLASS="CONTENT">
+            <H2>CONSTRUÇÃO DO QUADRADO</H2>
+            <P>1.DESENHAR O SEGMENTO INICIAL: TRACE UM SEGMENTO DE RETA AB COM O COMPRIMENTO DESEJADO PARA O LADO DO QUADRADO.</P>
+            <P>2.CONSTRUIR UMA RETA PERPENDICULAR NO PONTO A: 1) COM O COMPASSO, MARQUE UMA ABERTURA QUALQUER E FAÇA UM ARCO COM CENTRO EM A. 2) <BR>MANTENDO A MESMA ABERTURA, FAÇA DOIS ARCOS A PARTIR DOS PONTOS DE INTERSECÇÃO DO PRIMEIRO ARCO COM O SEGMENTO. 3) TRACE A RETA PERPENDICULAR PASSANDO POR A.</P>
+            <P>3.TRANSPORTAR A MEDIDA DO LADO PARA A PERPENDICULAR: COM A ABERTURA DO COMPASSO IGUAL AO COMPRIMENTO DE AB, MARQUE ESSE COMPRIMENTO NA RETA PERPENDICULAR A PARTIR DE A, CRIANDO O PONTO C.</P>
+            <P>4.CONSTRUIR A PERPENDICULAR EM B: 1)REPITA O PROCESSO DE TRAÇAR UMA RETA PERPENDICULAR EM B. 2) COM O COMPASSO, TRANSPORTE A MEDIDA DO LADO DO QUADRADO PARA ESSA RETA, CRIANDO O PONTO D.</P>
+            <P>5.FINALIZAR O QUADRADO: LIGUE OS PONTOS A, B, C E D EM SEQUÊNCIA..</P>
             
-         <img src="imagens/quadrado.gif" alt="Quadrado">
-             <p><a href="https://youtu.be/N3mnvuwAHfM?si=_B_czHN6gEdDQNck">Fonte da imagem(Adaptada): https://commons.wikimedia.org/w/index.php?search=regua+e+compasso&title=Special:MediaSearch&type=image" target="_blank". Acesso em: 13/03/2025. </a></p>
-        </div>
+         <IMG SRC="IMAGENS/QUADRADO.GIF" ALT="QUADRADO">
+             <P><A HREF="HTTPS://YOUTU.BE/N3MNVUWAHFM?SI=_B_CZHN6GEDDQNCK">FONTE DA IMAGEM(ADAPTADA): HTTPS://COMMONS.WIKIMEDIA.ORG/W/INDEX.PHP?SEARCH=REGUA+E+COMPASSO&TITLE=SPECIAL:MEDIASEARCH&TYPE=IMAGE" TARGET="_BLANK". ACESSO EM: 13/03/2025. </A></P>
+        </DIV>
 
         
 
-        </div>
-    </div>
+        </DIV>
+    </DIV>
 
-    <script>
-        function mostrarConstrucao() {
-            const opcoes = document.querySelectorAll('.content');
-            opcoes.forEach(opcao => opcao.style.display = 'none');
+    <SCRIPT>
+        FUNCTION MOSTRARCONSTRUCAO() {
+            CONST OPCOES = DOCUMENT.QUERYSELECTORALL('.CONTENT');
+            OPCOES.FOREACH(OPCAO => OPCAO.STYLE.DISPLAY = 'NONE');
 
-            const selecionado = document.getElementById('construcao').value;
-            if (selecionado) {
-                document.getElementById(selecionado).style.display = 'block';
+            CONST SELECIONADO = DOCUMENT.GETELEMENTBYID('CONSTRUCAO').VALUE;
+            IF (SELECIONADO) {
+                DOCUMENT.GETELEMENTBYID(SELECIONADO).STYLE.DISPLAY = 'BLOCK';
             }
         }
-    </script>
-</body>
-</html>
+    </SCRIPT>
+</BODY>
+</HTML>
+
